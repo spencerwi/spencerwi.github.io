@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Cursed Knowledge that Spencer has acquired (usually the hard way)</title>
+  </head>
+  <body>
+    <h1>Cursed Knowledge</h1>
+    <p>
+      The following annoying/cursed facts are true (or were true at the time I learned them), and are often the product of having learned them the hard way.
+      I'm writing them down so you, the reader, might be spared.
+    </p>
+    <ul>
+      <li>
+        <em>Learned on <time datetime="2026-10-20">2026-10-20</time></em>:
+        <strong>URLs are partly-case-insensitive, and partly-case-sensitive (per <a href="https://datatracker.ietf.org/doc/html/rfc3986#autoid-52">RFC 3986</a>)</strong><br/>
+        The protocol (e.g. <code>https://</code>) and the host (e.g. <code>www.spencerwi.com</code>) are case-<strong>insensitive</strong>, 
+        but the entire path (e.g. <code>/cursed-knowledge.html</code>) is case-<strong>sensitive</strong>.<br/>
+        This means that...
+        <ul>
+          <li>
+            ...<code>https://spencerwi.com/subdir/test.html</code> and <code>HTTPS://SPENCERWI.COM/subdir/test.html</code> are <strong>the same URL</strong>
+          </li>
+          <li>
+            ...<code>https://spencerwi.com/Subdir/test.html</code> and <code>https://spencerwi.com/subdir/test.html</code> are <strong>different URLs</strong>
+          </li>
+          <li>
+            ...<code>https://spencerwi.com/subdir/test.html</code> and <code>https://spencerwi.com/subdir/Test.html</code> are <strong>different URLs</strong>
+          </li>
+          <li>
+            ...<code>https://spencerwi.com/subdir/test.html?foo=bar</code> and <code>https://spencerwi.com/subdir/test.html?Foo=bar</code> are <strong>different URLs</strong>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
